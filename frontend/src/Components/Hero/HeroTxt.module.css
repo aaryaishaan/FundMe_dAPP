@@ -1,0 +1,93 @@
+.heroContainer {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 32px;
+  color: white;
+}
+
+.heroTitle:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 18px #fc8686;
+}
+
+
+.typewriter {
+  font-size: 1.25rem;
+  font-family: "Poppins", sans-serif;
+  color: #d1d1d1;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fc8686;
+  width: fit-content;
+  margin: 0 auto;
+  animation: typing 3s steps(40, end), blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.heroTextWrapper {
+  text-align: center;
+  margin-top: 4rem;
+  color: white;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  display: inline-block;
+
+  font-size: 4rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-shadow: 0 0 8px #fc8686;
+  letter-spacing: 2px;
+  transition: all 0.4s ease-in-out;
+}
+
+.letter {
+  display: inline-block;
+  transform-origin: bottom;
+  color: #ffffff;
+  text-shadow: 0 0 4px #fc8686, 0 0 8px #fc8686, 0 0 12px #fc8686,
+    0 0 16px rgba(252, 134, 134, 0.6);
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 4px #fc8686, 0 0 8px #fc8686, 0 0 12px #fc8686,
+      0 0 16px rgba(252, 134, 134, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 6px #fc8686, 0 0 12px #fc8686, 0 0 18px #fc8686,
+      0 0 24px rgba(252, 134, 134, 0.9);
+  }
+  100% {
+    text-shadow: 0 0 4px #fc8686, 0 0 8px #fc8686, 0 0 12px #fc8686,
+      0 0 16px rgba(252, 134, 134, 0.4);
+  }
+}
+
+.subtitle {
+  font-size: 1.25rem;
+
+  margin-top: 0.25rem;
+  margin-bottom: 32px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #e6e6e6;
+}

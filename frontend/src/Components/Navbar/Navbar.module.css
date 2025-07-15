@@ -1,0 +1,150 @@
+
+  @keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  /* background-color: rgba(0, 0, 0, 0.85); */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.cnct_wallet button {
+  background: #1e1e1e;
+  border: 1px solid #fc8686;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #eaeaea;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(187, 134, 252, 0.3);
+   /* Glow */
+}
+
+.cnct_wallet button:hover {
+  background: #2e2e2e;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(224, 170, 255, 0.5); /* On hover glow */
+}
+
+
+
+.logoContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  filter: drop-shadow(0 0 10px #fc8686);
+   animation: rotateIn 1.2s ease-out forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* animation: logoIntro 2s ease-out forwards; */
+  transform: scale(0);
+}
+
+@keyframes logoIntro {
+  to {
+    transform: scale(1);
+    filter: drop-shadow(0 0 10px #fc8686);
+  }
+}
+@keyframes rotateIn {
+  0% {
+    transform: rotate(-360deg) scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: rotate(20deg) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+
+
+.logoContainer:hover .logo {
+  transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(252, 134, 134, 0.6);
+}
+.hoverLinks {
+  position: absolute;
+  top: 70px;
+  display: flex;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 12px 18px;
+  border-radius: 10px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  animation: fadeSlideIn 0.4s ease forwards;
+  box-shadow: 0 0 12px rgba(224, 170, 255, 0.3);
+  z-index: 999;
+}
+
+.hoverLinks a {
+  color: #eaeaea;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.hoverLinks a:hover {
+  color: #f3d9fa;
+  transform: scale(1.1);
+}
+
+
+.icons {
+  display: flex;
+  gap: 24px;
+  font-size: 28px; /* increase icon size */
+  align-items: center;
+}
+.icons a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    filter: drop-shadow(0 0 8px #fc8686);
+}
+
+.icons a:hover {
+  color: #fc8686;
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 8px #fc8686);
+}
+
+
+
+
+
+
+
