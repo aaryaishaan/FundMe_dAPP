@@ -1,16 +1,4 @@
-// import React from "react";
-// import styles from "./HeroTxt.module.css";
 
-// const HeroTxt = () => {
-//   return (
-//     <div className={styles.heroContainer}>
-//       <h1 className={styles.heroTitle}>Fund The Future</h1>
-//       <p className={styles.typewriter}> A cause worth every Block.</p>
-//     </div>
-//   );
-// };
-
-// export default HeroTxt;
 
 
 import React from "react";
